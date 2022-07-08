@@ -1,0 +1,49 @@
+.about {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+    .title {
+        margin: 0;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        text-align: justify;
+        background: rgba(255,255,255,.5);
+        padding: 20px;
+        border-radius: 5px;
+        color: #000;
+    }
+}
+
+// DESKTOP
+@media only screen and (min-width: 768px) {
+    .about {
+        padding: 100px;
+
+        .title, .text {
+            margin: 20px;
+        }
+
+        .title {
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 5px solid;
+        }
+
+        .text {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
