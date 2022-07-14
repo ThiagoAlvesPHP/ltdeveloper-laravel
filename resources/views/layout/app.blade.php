@@ -9,9 +9,12 @@
 
     <link rel="stylesheet/less" type="text/css" href="{{ asset('assets/css/styles.less') }}" />
     <script defer src="{{ asset('assets/js/menu.js') }}"></script>
+
+    {{-- libs --}}
+    <link rel="stylesheet" href="{{ asset('assets/libs/fontawesome-free-6.1.1-web/css/all.css') }}">
+    <script src="{{ asset('assets/libs/fontawesome-free-6.1.1-web/js/all.js') }}"></script>
+
     <script src="{{ asset('assets/libs/jquery.js') }}"></script>
-
-
     {{-- slick --}}
     <link rel="stylesheet" href="{{ asset('assets/libs/slick-1.8.1/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/libs/slick-1.8.1/slick/slick-theme.css') }}">
@@ -60,8 +63,18 @@
         </div>
     </div>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+
+    {{-- integração de libras --}}
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>

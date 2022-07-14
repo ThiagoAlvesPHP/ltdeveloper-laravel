@@ -55,3 +55,17 @@ body {
     }
     @import 'whatsapp.less';
 }
+
+// estilizar scroll de site
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: rgba(7, 67, 159, .7);
+    // background: blue;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 165, 0, .5);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgba(7, 67, 159, .7);  /* creates padding around scroll thumb */
+}

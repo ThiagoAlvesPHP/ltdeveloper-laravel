@@ -1,6 +1,6 @@
 .text-efect {
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 150, 180) 100%);
     padding: 40px 42px;
 
     .title, .text {
@@ -15,6 +15,25 @@
         font-size: 20px;
         text-transform: uppercase;
         text-decoration-skip-ink: initial;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        max-width: 250px;
+        margin: auto;
+
+        svg {
+            font-size: 25px;
+            transition: all ease .3s;
+            color: #FFF;
+
+            &:hover {
+                color: #c0c0c0;
+            }
+        }
     }
 }
 

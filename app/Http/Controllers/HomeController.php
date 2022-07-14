@@ -23,6 +23,13 @@ class HomeController extends Controller
             ["title" => "Criação de E-commerce", "image" => "assets/images/service-c.webp", "description" => "E aí, precisa vender mais, você está no lugar certo e com a equipe certa para te ajudar a vender mais e agora pela internet. É hora de ter sua loja virtual e ampliar seus negócio."]
         ];
 
+        $data['customers'] = [
+            ["title" => "Callnet - BA", "image" => "assets/images/customers/callnet.webp", "link" => "https://www.callnetba.net.br/"],
+            ["title" => "A Sua Sala", "image" => "assets/images/customers/asuasala.webp", "link" => "https://www.asuasala.com.br/"],
+            ["title" => "Conexão Ativa", "image" => "assets/images/customers/conexaoativa.webp", "link" => "https://www.conexaoativatelecom.com/"],
+            ["title" => "Verde Rosa Floricultura", "image" => "assets/images/customers/verderosa.webp", "link" => "https://www.verderosafloricultura.com.br/"]
+        ];
+
         return view('home', $data);
     }
 }

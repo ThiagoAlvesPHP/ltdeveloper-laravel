@@ -1,14 +1,23 @@
 .banner {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
     max-height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+
+    .bg_video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        z-index: -1;
+        height: 100vh;
+    }
 
     .logo {
         width: 200px;
@@ -17,5 +26,22 @@
     .title {
         text-align: center;
         font-size: 18px;
+    }
+
+    .link {
+        padding: 15px 30px;
+        background: rgba(0,0,0,.7);
+        margin-top: 20px;
+        border-radius: 5px;
+        color: #FFF;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all ease .3s;
+
+        &:hover {
+            background: rgba(31, 29, 29, 0.7);
+        }
     }
 }

@@ -11,6 +11,7 @@
 
         <div class="nav-link"><a href="#about" class="link">Sobre</a></div>
         <div class="nav-link"><a href="#service" class="link">Serviços</a></div>
+        <div class="nav-link"><a href="#customers" class="link">Clientes</a></div>
         <div class="nav-link"><a href="#projects" class="link">Projetos</a></div>
         <div class="nav-link"><a href="#contact" class="link">Contato</a></div>
 
@@ -21,6 +22,7 @@
         <i class="close" onclick="closeMenu(this)">X</i>
         <a href="#about" class="nav-link-mobile">Sobre</a>
         <a href="#service" class="nav-link-mobile">Serviços</a>
+        <a href="#customers" class="nav-link-mobile">Clientes</a>
         <a href="#projects" class="nav-link-mobile">Projetos</a>
         <a href="#contact" class="nav-link-mobile">Contato</a>
     </div>
